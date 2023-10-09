@@ -693,6 +693,7 @@ header.sticky {
 }
 
 .view_btn button {
+  width: 150px;
   color: #fff;
   font-size: 18px;
   font-weight: bold;
@@ -737,6 +738,17 @@ header.sticky {
     transform: translate(0, 0);
     filter: blur(0);
   }
+}
+
+.view_btn img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: -50px;
+  bottom: 2px;
+  opacity: 0;
+  animation: showcontent 1s ease-in-out 0.6s 1 forwards;
+  cursor: pointer;
 }
 
 .buttons {
