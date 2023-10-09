@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEGO</title>
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/pc.css">
+    <link rel="stylesheet" href="css/tab.css">
+    <link rel="stylesheet" href="css/mobile.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- swiper 연결 -->
+    <link rel="stylesheet" href="css/swiper.css">
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/jquery.easeScroll.js"></script>
+    <script src="js/index.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        $("html").easeScroll();
+    </script>
+
+</head>
+
+<body>
+
+    <div id="wrap">
+
+        <header id="lego_header">
+            <nav id="lego_in_header">
+                <div id="main_logo">
+                    <a onClick="window.location.reload()"><img src="img/logo.svg" alt="메인로고"></a>
+                </div>
+
+                <div id="left_menu">
+                    <div id="login_vip">
+                        <img src="img/login.png" alt="로그인">
+                        <a href="#"><p>로그인</p></a>
+
+                        <img src="img/vip.png" alt="vip">
+                        <a href="#"><p>VIP</p></a>
+                    </div>
+
+                    <div id="menu">
+
+                        <ul id="main_menu">
+
+                            <li class="top_menu">
+                                <a href="#">제품 쇼핑</a>
+                                <ul class="sub_menu">
+                                    <li><a href="#">시리즈별 ></a></li>
+                                    <li><a href="#">연령별 ></a></li>
+                                    <li><a href="#">가격별 ></a></li>
+                                    <li><a href="#">레고 상품 ></a></li>
+                                    <li><a href="#">관심분야 ></a></li>
+                                    <li><a href="#">Pick and Build ></a></li>
+                                    <li><a href="#">독점 제품</a></li>
+                                    <li><a href="#">신제품</a></li>
+                                    <li><a href="#">베스트셀러</a></li>
+                                    <li><a href="#">홈 데코</a></li>
+                                    <li><a href="#">할인 및 행사</a></li>
+                                    <li><a href="#">출시 예정</a></li>
+                                    <li><a href="#">마지막 재고</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="top_menu">
+                                <a href="#">브랜드 소개</a>
+                                <ul class="sub_menu" id="sub_menu_center">
+                                    <li><a href="#">기업가치 ></a></li>
+                                    <li><a href="#">레고 앱 ></a></li>
+                                    <li><a href="#">레고 매거진 ></a></li>
+                                    <li><a href="#">레고 전 제품</a></li>
+                                    <li><a href="#">레고 전체 관심사별</a></li>
+                                    <li><a href="#">LEGO® CON</a></li>
+                                    <li><a href="#">성인 환영</a></li>
+                                    <li><a href="#">Rebuild the World</a></li>
+                                    <li><a href="#">VIP 리워드 프로그램</a></li>
+                                    <li><a href="#">도트 3D 데코레이션</a></li>
+                                    <li><a href="#">LEGO® MOSAIC</a></li>
+                                    <li><a href="#">90년의 브릭 역사</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="top_menu">
+                                <a href="#">고객지원</a>
+                                <ul class="sub_menu">
+                                    <li><a href="#">주문 현황 확인</a></li>
+                                    <li><a href="#">배송 및 반품</a></li>
+                                    <li><a href="#">스토어 검색</a></li>
+                                    <li><a href="#">조립설명서 검색</a></li>
+                                    <li><a href="#">일반적인 질문</a></li>
+                                    <li><a href="#">문의하기</a></li>
+                                    <li><a href="#">부속품 브릭</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+
+                        <div id="right_menu">
+
+                            <div id="search_box">
+                                <input type="search" placeholder="   검색어를 입력하세요.">
+                                <a href="#">
+                                    <img src="img/search.png" alt="검색">
+                                </a>
+                                <a href="#"><img src="img/like.png" alt="찜"></a>
+                                <a href="#"><img src="img/bag.png" alt="장바구니"></a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </nav>
+
+                <!-- tab, mobile 헤더 -->
+                <div id="m_header">
+
+                    <div id="m_left">
+
+                        <div id="m_logo">
+                            <a onClick="window.location.reload()">
+                            <img src="img/logo.svg" alt="메인로고"></a>
+                        </div>
+                        
+                        <div id="m_icon1">
+                            <img src="img/m_menu.svg" alt="모바일 메뉴" id="menu_icon">
+                            <img src="img/m_search.svg" alt="모바일 검색" >
+                        </div>
+
+                    </div>
+
+                    <div id="m_icon2">
+                        <img src="img/m_bag.svg" alt="모바일 장바구니">
+                    </div>
+
+                    <div id="m_icon3">
+                        <div class="m_icon3_wrap">
+                            <a href="#"><img src="img/login.png" alt="모바일 로그인"></a>
+                            <a href="#"><img src="img/vip.png" alt="모바일 vip"></a>
+                            <a href="#"><img src="img/bag.png" alt="모바일 장바구니"></a>
+                        </div>
+                    </div>
+
+                    <div id="m_menu">
+
+                        <ul id="m_main_menu">
+
+                            <li class="m_top_menu">
+                                <a href="#">제품 쇼핑</a>
+                                <ul class="m_sub_menu">
+                                    <li><a href="https://www.lego.com/ko-kr/themes">시리즈별 ></a></li>
+                                    <li><a href="https://www.lego.com/ko-kr/categories/age">연령별 ></a></li>
+                                    <li><a href="https://www.lego.com/ko-kr/categories/price">가격별 ></a></li>
+                                    <li><a href="https://www.lego.com/ko-kr/categories/lego-merchandise">레고 상품 ></a></li>
+                                    <li><a href="https://www.lego.com/ko-kr/categories/interests">관심분야 ></a></li>
+                                    <li><a href="https://www.lego.com/ko-kr/pick-and-build">Pick and Build ></a></li>
+                                    <li><a href="#">독점 제품</a></li>
+                                    <li><a href="#">신제품</a></li>
+                                    <li><a href="#">베스트셀러</a></li>
+                                    <li><a href="#">홈 데코</a></li>
+                                    <li><a href="#">할인 및 행사</a></li>
+                                    <li><a href="#">출시 예정</a></li>
+                                    <li><a href="#">마지막 재고</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="m_top_menu">
+                                <a href="#">브랜드 소개</a>
+                                <ul class="m_sub_menu" id="m_sub_menu_center">
+                                    <li><a href="https://www.lego.com/ko-kr/aboutus">기업가치 ></a></li>
+                                    <li><a href="https://www.lego.com/ko-kr/builder-app">레고 앱 ></a></li>
+                                    <li><a href="https://www.lego.com/ko-kr/themes/brand-catalogue">레고 매거진 ></a></li>
+                                    <li><a href="#">레고 전 제품</a></li>
+                                    <li><a href="#">레고 전체 관심사별</a></li>
+                                    <li><a href="#">LEGO® CON</a></li>
+                                    <li><a href="#">성인 환영</a></li>
+                                    <li><a href="#">Rebuild the World</a></li>
+                                    <li><a href="#">VIP 리워드 프로그램</a></li>
+                                    <li><a href="#">도트 3D 데코레이션</a></li>
+                                    <li><a href="#">LEGO® MOSAIC MAKER</a></li>
+                                    <li><a href="#">90년의 브릭 역사</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="m_top_menu">
+                                <a href="#">고객지원</a>
+                                <ul class="m_sub_menu">
+                                    <li><a href="#">주문 현황 확인</a></li>
+                                    <li><a href="#">배송 및 반품</a></li>
+                                    <li><a href="#">스토어 검색</a></li>
+                                    <li><a href="#">조립설명서 검색</a></li>
+                                    <li><a href="#">일반적인 질문</a></li>
+                                    <li><a href="#">문의하기</a></li>
+                                    <li><a href="#">부속품 브릭</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div id="m_search">
+                        <div class="m_search_box">
+                            <input type="search" placeholder="   검색어를 입력해주세요."><span><button>검색</button></span>
+                        </div>
+                    </div>
+
+                </div>
+                
+        </header>
+
+        <!-- swiper -->
+        <div id="main_swiper">
+
+            <div class="swiper mySwiper" id="main_swiper1">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide" id="main1_swiper">
+                        <!-- css background img -->
+                        <div class="main_bottom_swiper">
+                            <div class="main_txt_swiper">
+                                <p>레고® 스타워즈™ 세트와 함께</br>내면의 반란군을 일깨우세요<em>!</em></p>
+                            </div>
+
+                            <div class="main_move_btn">
+                                <div class="main_move_swiper1">
+                                    <a href="#">SHOP NOW ></a>
+                                </div>
+                                <div class="main_move_swiper2">
+                                    <a href="#">PLAY ZONE ></a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide" id="main2_swiper">
+                        <!-- css background img -->
+                        <div class="main_bottom_swiper">
+                            <div class="main_txt_swiper">
+                                <p>레고® DC 세트를 통해 내 안에 잠들어 있는</br>
+                                    영웅 또는 악당을 깨우세요<em>!</em></p>
+                            </div>
+
+                            <div class="main_move_btn">
+                                <div class="main_move_swiper1">
+                                    <a href="#">SHOP NOW ></a>
+                                </div>
+                                <div class="main_move_swiper2">
+                                    <a href="#">PLAY ZONE ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide" id="main3_swiper">
+                        <!-- css background img -->
+                        <div class="main_bottom_swiper">
+                            <div class="main_txt_swiper">
+                                <p>마블 플레이 세트를 통해 특별한 조립체험과<br>좋아하는 수퍼 히어로로 변신해볼 기회<em>!</em></p>
+                            </div>
+
+                            <div class="main_move_btn">
+                                <div class="main_move_swiper1">
+                                    <a href="#">SHOP NOW ></a>
+                                </div>
+                                <div class="main_move_swiper2">
+                                    <a href="#">PLAY ZONE ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+            </div>
+
+        </div>
+
+        <script>
+            var swiper = new Swiper("#main_swiper1", {
+                pagination: {
+                    el: ".swiper-pagination",
+                    dynamicBullets: true,
+                },
+                loop: true,
+                autoplay: {
+                    delay: 2500,
+                },
+            });
+        </script>
+
+        <!-- section 1 -->
+
+        <section id="sec1">
+
+            <div id="sec1_left">
+                <img src="img/sec1_left.png" alt="스파이더맨">
+                <div id="sec1_txt">
+                    <p>어린이 영웅들에게</br>
+                        조립 놀이를 가르쳐주세요</p>
+                    <p>어린이부터 어른까지, 모든 영웅 이야기 애호가에게</br>
+                        레고® 마블 조립과 놀이 세트를 이용해</br>
+                        무한한 상상 속의 모험 이야기를 만들고 함께 공유하는 <br>즐거움을 드립니다.</p>
+                    <div class="detail_view">
+                        자세히 보기 >
+                    </div>
+                </div>
+                
+            </div>
+
+            <div id="sec1_right"></div>
+
+        </section>
+
+        <!-- section 2 -->
+
+        <section id="sec2">
+
+            <div id="sec2_left"></div>
+
+            <div id="sec2_right">
+                <div id="sec2_txt">
+                    <p>재미와 도전과제의 <br>완벽한 균형</p>
+                    <p>레고® 4+는 아이들이 좋아하는 캐릭터와 이야기를 소재 삼아 <br>난이도가 적절하면서도
+                        아이가 능히 따라할 수 있는<br> 조립 과제를 제시합니다. 아이들이 상자를 여는 순간부터 <br>어떤 일이 일어나는지 지켜보세요!</p>
+                    <div class="detail_view">
+                        자세히 보기 >
+                    </div>
+                </div>
+                <div id="m_sec2_txt">
+                    <p>재미와 도전과제의<br>완벽한 균형</p>
+                    <p>레고® 4+는 아이들이 좋아하는 캐릭터와 이야기를<br>소재 삼아 난이도가 적절하면서도<br>아이가 능히 따라할 수 있는 조립 과제를 제시합니다.<br>아이들이 상자를 여는 순간부터 <br>어떤 일이 일어나는지 지켜보세요!</p>
+                    <div class="detail_view">
+                        자세히 보기 >
+                    </div>
+                </div>
+                <img src="img/sec2_right.png" alt="프렌즈">
+            </div>
+
+            <div id="m_sec2_left"></div>
+
+        </section>
+
+        <section id="sec3">
+            <!-- background img -->
+            <div id="sec3_new_title">
+                <p>새로 나왔어요<em>!</em></p>
+            </div>
+
+            <div id="sec3_new">
+                <div class="sec3_item">
+                    <div class="sec3_item_img">
+                        <img src="img/sec3_1.png" alt="등대">
+                    </div>
+                    <div class="sec3_item_txt">
+                        <p>전동식 등대</p>
+                        <p>399,900원</p>
+                        <div>장바구니 담기</div>
+                    </div>
+                </div>
+
+                <div class="sec3_item" id="sec3_item2">
+                    <div class="sec3_item_img">
+                        <img src="img/sec3_2.png" alt="스타워즈">
+                    </div>
+
+                    <div class="sec3_item_txt">
+                        <p>레고® 스타워즈™<br>크리스마스 캘린더</p>
+                        <p>49,900원</p>
+                        <div>장바구니 담기</div>
+                    </div>
+                </div>
+
+                <div class="sec3_item" id="sec3_item3">
+                    <div class="sec3_item_img">
+                        <img src="img/sec3_3.png" alt="가디언즈오브갤럭시">
+                    </div>
+
+                    <div class="sec3_item_txt">
+                        <p>가디언즈 오브 갤럭시<br>크리스마스 캘린더</p>
+                        <p>49,900원</p>
+                        <div>장바구니 담기</div>
+                    </div>
+                </div>
+
+                <div class="sec3_item">
+                    <div class="sec3_item_img">
+                        <img src="img/sec3_4.png" alt="호그와트 익스프레스">
+                    </div>
+
+                    <div class="sec3_item_txt">
+                        <p>호그와트 익스프레스™<br>콜렉터 에디션</p>
+                        <p>649,900원</p>
+                        <div>장바구니 담기</div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="sec3_swiper">
+            <!-- 제목넣기 -->
+            <div id="sec3_new_title_swiper">
+                <p>새로 나왔어요<em>!</em></p>
+            </div>
+            <div class="swiper mySwiper" id="sec3_in_swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide" id="sec3_swiper1">
+                        <div id="sec3_item_img1_swiper">
+                            <img src="img/sec3_1.png" alt="등대">
+                        </div>
+                        <div class="sec3_item_txt_swiper">
+                            <p>전동식 등대</p>
+                            <p>399,900원</p>
+                            <div>장바구니 담기</div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide" id="sec3_swiper2">
+                        <div class="sec3_item_img23_swiper">
+                            <img src="img/sec3_2.png" alt="스타워즈">
+                        </div>
+                        <div class="sec3_item_txt_swiper">
+                            <p>레고® 스타워즈™ 크리스마스 캘린더</p>
+                            <p>49,900원</p>
+                            <div>장바구니 담기</div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide" id="sec3_swiper3">
+                        <div class="sec3_item_img23_swiper">
+                            <img src="img/sec3_3.png" alt="가디언즈오브갤럭시">
+                        </div>
+                        <div class="sec3_item_txt_swiper">
+                            <p>가디언즈 오브 갤럭시 크리스마스 캘린더</p>
+                            <p>49,900원</p>
+                            <div>장바구니 담기</div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide" id="sec3_swiper4">
+                        <div id="sec3_item_img4_swiper">
+                            <img src="img/sec3_4.png" alt="호그와트 익스프레스">
+                        </div>
+                        <div class="sec3_item_txt_swiper">
+                            <p>호그와트 익스프레스™ - 콜렉터 에디션</p>
+                            <p>649,900원</p>
+                            <div>장바구니 담기</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper_btn">
+                    <div class="swiper-button-next" id="sec3_next"></div>
+                    <div class="swiper-button-prev" id="sec3_prev"></div>
+                </div>
+
+                <div class="swiper-pagination" id="sec3_dot"></div>
+            </div>
+
+            <script>
+                var swiper = new Swiper("#sec3_in_swiper", {
+                    pagination: {
+                        el: "#sec3_dot",
+                        dynamicBullets: true,
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    loop: true,
+                    autoplay: {
+                        delay: 2500,
+                        disableOnInteraction: false,
+                    },
+                });
+            </script>
+
+        </section>
+
+        <section id="sec4">
+
+            <div id="sec4_title">
+                <p>요즘 잘 나가요<em>!</em></p>
+            </div>
+
+            <div id="sec4_leftright">
+
+                <div id="sec4_left">
+                    <div class="sec4_main" data-aos="fade-up" data-aos-duration="3000">
+                        <img src="img/sec4_1.png" alt="해리포터">
+                        <p>재미있는 놀이를 위한 마법의 주문</p>
+                        <p>레고® 해리포터™가 선사하는</br>마법과도 같은 모험의 세계로</br>여러분을 초대합니다.</p>
+                        <p>쇼핑하기 ></p>
+                    </div>
+
+                    <div class="sec4_main" data-aos="fade-up" data-aos-duration="3000">
+                        <img src="img/sec4_2.png" alt="스타워즈">
+                        <p>포스를 느껴 보는 시간</p>
+                        <p>나이에 관계없이 모든 팬이</br>좋아할 재미있는</br>신제품 레고® 스타워즈™ 세트입니다.</p>
+                        <p>쇼핑하기 ></p>
+                    </div>
+                </div>
+
+                <div id="sec4_right">
+                    <div class="sec4_main" data-aos="fade-up" data-aos-duration="3000">
+                        <img src="img/sec4_3.png" alt="스턴트">
+                        <p>짜릿한 스턴트 액션!</p>
+                        <p>레고® 시티 스턴트 신규 세트가</br>출시되었어요.</p>
+                        <p>쇼핑하기 ></p>
+                    </div>
+
+                    <div class="sec4_main" data-aos="fade-up" data-aos-duration="3000">
+                        <img src="img/sec4_4.png" alt="마블">
+                        <p>멋진 모험이 기다리고 있어요!</p>
+                        <p>신제품 레고® 마블 세트로</br>슈퍼 히어로 액션을</br>
+                            재현해 볼 수 있어요.</p>
+                        <p>쇼핑하기 ></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="m_sec4">
+
+            <div id="m_sec4_title">
+                <p>요즘 잘 나가요<em>!</em></p>
+            </div>
+
+            <div id="m_sec4_leftright">
+
+                <div id="m_sec4_all">
+                    <div class="m_sec4_main" data-aos="fade-up" data-aos-duration="3000">
+                        <img src="img/sec4_1.png" alt="해리포터">
+                        <p>재미있는 놀이를 위한 마법의 주문</p>
+                        <p>레고® 해리포터™가 선사하는 마법과도 같은</br>
+                            모험의 세계로 여러분을 초대합니다.</p>
+                        <p>쇼핑하기 ></p>
+                    </div>
+
+                    <div class="m_sec4_main" data-aos="fade-up" data-aos-duration="3000">
+                        <img src="img/sec4_2.png" alt="스타워즈">
+                        <p>포스를 느껴 보는 시간</p>
+                        <p>나이에 관계없이 모든 팬이 좋아할 재미있는</br>
+                            신제품 레고® 스타워즈™ 세트입니다.</p>
+                        <p>쇼핑하기 ></p>
+                    </div>
+
+                    <div class="m_sec4_main" data-aos="fade-up" data-aos-duration="3000">
+                        <img src="img/sec4_3.png" alt="스턴트">
+                        <p>짜릿한 스턴트 액션!</p>
+                        <p>레고® 시티 스턴트 신규 세트가 출시되었어요.</p>
+                        <p>쇼핑하기 ></p>
+                    </div>
+
+                    <div class="m_sec4_main" data-aos="fade-up" data-aos-duration="3000">
+                        <img src="img/sec4_4.png" alt="스턴트">
+                        <p>멋진 모험이 기다리고 있어요!</p>
+                        <p>신제품 레고® 마블 세트로 슈퍼 히어로 액션을</br>재현해 볼 수 있어요.</p>
+                        <p>쇼핑하기 ></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer id="footer_align">
+
+            <div id="footer_top">
+                <div id="footer_logo">
+                    <a href="#lego_header"><img src="img/logo.svg" alt="로고"></a>
+                </div>
+
+                <div id="footer_menu">
+                    <ul class="footer_txt">
+                        <li><a href="#">회사소개</a>
+                            <ul class="footer_txt_sub">
+                                <li><a href="#">그룹소개</a></li>
+                                <li><a href="#">뉴스</a></li>
+                                <li><a href="#">지속가능한 사업</a></li>
+                                <li><a href="#">공급망 투명성 선언</a></li>
+                                <li><a href="#">제품 인증</a></li>
+                                <li><a href="#">채용 정보</a></li>
+                                <li><a href="#">규정 준수 핫라인</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="footer_txt">
+                        <li><a href="#">지원</a>
+                            <ul class="footer_txt_sub">
+                                <li><a href="#">연락처</a></li>
+                                <li><a href="#">조립설명서</a></li>
+                                <li><a href="#">부품누락</a></li>
+                                <li><a href="#">배송 및 반품</a></li>
+                                <li><a href="#">결제 방식</a></li>
+                                <li><a href="#">이용약관</a></li>
+                                <li><a href="#">제품 리콜</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="footer_txt">
+                        <li><a href="#">명소</a>
+                            <ul class="footer_txt_sub">
+                                <li><a href="#">레고® 하우스</a></li>
+                                <li><a href="#">레고랜드® 파크</a></li>
+                                <li><a href="#">디스커버리 센터</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="footer_txt" id="footer_txt_info">
+                        <li><a href="#">기타 정보</a>
+                            <ul class="footer_txt_sub">
+                                <li><a href="#">레고® 라이프</a></li>
+                                <li><a href="#">레고 에듀케이션</a></li>
+                                <li><a href="#">레고 아이디어</a></li>
+                                <li><a href="#">레고 파운데이션</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div id="footer_bottom">
+
+                <div id="footer_bottom_up">
+                    <div id="up_left">
+                        <div id="footer_email">
+                            <img src="img/footer1.png" alt="푸터 캐릭터1">
+                            <p>마케팅<br>이메일 구독</p>
+                        </div>
+                        <div id="search_all">
+                            <div id="footer_search_box">
+                                <input type="search" placeholder="이메일 주소">
+                            </div>
+                            <div id="search_box_touch">
+                                <a href="#">></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="up_right">
+                        <div id="up_right_wrap">
+                            <div id="up_right_follow">
+                                <p>팔로우하기</p>
+                            </div>
+                            <div id="up_right_img">
+                                <div id="follow">
+                                    <img src="img/insta.svg" alt="인스타그램">
+                                    <img src="img//twitter.svg" alt="트위터">
+                                    <img src="img/youtube.svg" alt="유튜브">
+                                    <img src="img/facebook.svg" alt="페이스북">
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div id="follow_character">
+                            <img src="img/footer2.png" alt="푸터 캐릭터2">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="footer_bottom_down">
+                    <div id="down_1">
+                        <a href="#">개인정보처리방침</a>|
+                        <a href="#">쿠키</a>|
+                        <a href="#">법적고지</a>|
+                        <a href="#">이용약관</a>|
+                        <a href="#">접근성</a>|
+                        <a href="#">쿠키설정</a>
+                    </div>
+
+                    <div id="down_2">
+                        <p>LEGO System A/S, DK-7190 Billund, Denmark. 만 18세 이상부터 온라인 구매가 가능합니다. 레고, 레고 로고, 미니피겨, 듀플로,
+                        키마의 전설, 닌자고, 바이오니클, 마인드스톰 및 믹셀은 레고 그룹의 상표 및/또는 저작권입니다. <br>©2022 The LEGO Group. All rights reserved. 이 사이트를 이용하면 이용약관에 동의하는 것으로 간주됩니다.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </footer>
+
+        <script>
+            AOS.init();
+        </script>
+
+    </div>
+
+</body>
+
+</html>

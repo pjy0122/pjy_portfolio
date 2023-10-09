@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Gothic:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="weather">
+        <img
+          class="weatherIcon"
+          src="https://openweathermap.org/img/wn/10d@2x.png"
+          alt="weather"
+        />
+
+        <div class="weatherTemp">Seoul, 22℃</div>
+      </div>
+      <div class="date">date</div>
+      <div class="time">Time</div>
+      <div class="quotes">
+        <div class="quotesMsg">Quotes</div>
+        <div class="quotesBtnAll">
+          <button class="quotesAddBtn" onclick="onClickAdd()">
+            새 명언 추가하기
+          </button>
+          <button class="quotesDelBtn" onclick="onClickDel()">
+            명언 제거하기
+          </button>
+        </div>
+      </div>
+      <div class="newQuotes">
+        <input class="newQuotesInput" type="text" />
+        <button class="newQuotesButton" onclick="onClickRegist()">등 록</button>
+      </div>
+      <!-- chat GPT -->
+      <div class="search">
+        <div class="searchTitle">
+          <img class="searchLogo" src="images/pngegg.png" alt="시공죠아" />
+          <div class="gpttext">Chat GPT 무엇이든 물어보세요!</div>
+        </div>
+        <div class="searchForm">
+          <input class="searchInput" type="text" />
+          <button class="searchButton" onclick="onClickSearch()">
+            <img src="images/search2.svg" alt="search" />
+          </button>
+        </div>
+      </div>
+      <div class="searchResult">Search Result</div>
+
+      <div class="nft">
+        <div>
+          <img
+            src="https://i.seadn.io/gcs/files/4eb82cf2d1f6385f13f4ecdd4205bd08.png?auto=format&w=1920"
+            alt="my nft"
+          />
+          <img
+            src="https://i.seadn.io/gcs/files/0157ae2afac3a43dfd036078b404b4ee.png?auto=format&w=1920"
+            alt="my nft2"
+          />
+          <img
+            src="https://i.seadn.io/gae/7OZInB3IJQzm3Zuwi5DQHbeYtP-GZqe3BrQxudHHsuLYMzPLf9_gAPCyGMBd29MHI5Aeu0zEIUK-ADLPttTy1Q9KlcuomAVSXCiZ?auto=format&w=1920"
+            alt="my nft3"
+          />
+
+          <div class="nftHover"></div>
+        </div>
+
+        <div class="nftMore">
+          <a href="https://opensea.io/TheNewThings" target="_blank">더 보기</a>
+          <a href="https://opensea.io/TheNewThings" target="_blank">더 보기</a>
+          <a href="https://opensea.io/TheNewThings" target="_blank">더 보기</a>
+        </div>
+
+        <button class="nftXbtn" onclick="onClickToggle(false)">X</button>
+      </div>
+      <button class="nftView" onclick="onClickToggle(true)">NFT 보기</button>
+    </main>
+
+    <video
+      class="bgVideo"
+      src="images/otherside.mp4"
+      autoplay
+      muted
+      loop
+    ></video>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
